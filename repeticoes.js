@@ -35,10 +35,14 @@ function exemploDowhile() {
 
 
 
-function exercicio1
-
-for ( let contador = 1; contador <= 10; contador++) { 
-    alert (contador)
+function exercicio1 (){
+    for ( let contador = 1; contador <= 10; contador++) { 
+        alert (contador)
+}
 } 
 
-exercicio1 ()
+function exercicio2  (){
+
+    let valor = prompt ("digite um numero")
+    
+}
