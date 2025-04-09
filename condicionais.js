@@ -79,19 +79,51 @@ function exercicio6() {
 function exercicio1inter(){
 debugger
 
-let numero1 = prompt("digite numero")
-let numero2 = prompt("digite outro valor")
-let product = numero1 * numero2
-alert(product);
+let numero1 = Number (prompt("digite numero"))
+let numero2 = Number (prompt("digite outro valor"))
+let operacao = prompt ("digite a operacao")
+let resultado
 
+if (operacao === "+" ){
+  resultado= numero1 + numero2
+} else if ( operacao === "-"){
+  resultado = numero1 - numero2
+}else if ( operacao === "*"){
+  resultado = numero1 * numero2
+} else if ( operacao === "/"){
+  resultado = numero1 / numero2
 }
+alert (" O resultado é: "+ resultado)  
+}
+
 
 function exercicio2inter(){
 
     let numero1 = prompt("digite valor 1")
     let numero2 = prompt("digite valor 2")
     let numero3 = prompt("digite valor 3") 
-    l
-
-
+    
+    if ( numero1>numero2 && numero1>numero3) {
+      alert("Primeiro valor maior")
+    } else {
+      if ( numero2 > numero1 && numero2>numero3)
+        alert ("Segundo valor maior")
+    } if (numero3>numero1 && numero3>numero2){
+      alert ("Terceiro valor maior")
+    }
 }
+
+
+function exercicio3inter () {
+ 
+let valor = prompt("Digite o valor da sua compra e veja seu desconto")
+let desconto
+if (valor > 100){
+  desconto = 0
+} else if ( valor <100){
+  desconto = valor - 10%
+}
+
+alert ("Seu desconto é:" + desconto)
+}
+exercicio3inter ()
