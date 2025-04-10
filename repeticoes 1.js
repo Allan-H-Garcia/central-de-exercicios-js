@@ -56,4 +56,28 @@ function exercicio4() {
   }
 }
 
-exercicio4();
+function exercicio5() {
+  let valor = prompt("escolha um numero");
+  while (valor >= 0) {
+    alert(valor);
+    valor--;
+  }
+}
+
+function exercicio6() {
+  debugger;
+  let numeroaleatorio = Math.floor(Math.random() * (100 - 0) + 0);
+  let valor;
+  while (valor != numeroaleatorio) {
+    valor = prompt("adivinhe o numero entre 0 e 100");
+    if (valor < numeroaleatorio) {
+      alert("numero menor que o valor digitado");
+    } else if (valor > numeroaleatorio) {
+      alert("numero maior que o valor digitado");
+    } else  {
+      alert("ACERTOU!");
+    }
+  }
+}
+
+exercicio6();
