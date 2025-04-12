@@ -82,7 +82,7 @@ function exercicioCondicionais6() {
 }
 
 
-function exercicio1inter() {
+function exercicioCondicionais7() {
 
 
   let numero1 = Number(prompt("digite numero"))
